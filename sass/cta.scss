@@ -1,0 +1,16 @@
+.cta{
+    grid-column: 3/11;
+    grid-row: 6/7;
+    padding: 15rem 0;
+    &-box{
+        background-color: #20003a;
+        display: flex;
+        padding-right: 15rem;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+        img{ width: 55%;}
+    }
+    &-text{justify-self: center;}
+}
