@@ -436,7 +436,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #56009c;
   font-weight: 600;
   border-top: 2px solid #2f0055;
   font-size: 1.5rem; }
@@ -446,6 +445,7 @@ p {
     justify-content: space-between;
     align-items: center; }
   .footer-item {
+    color: #56009c;
     padding: 0 1.5rem;
     transition: all .3s; }
     .footer-item a {

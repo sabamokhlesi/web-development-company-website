@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color:$color-primary-light ;
     font-weight: 600;
     border-top: 2px solid $color-primary-medium;
     font-size: 1.5rem;
@@ -16,6 +15,7 @@
         align-items: center;
     }
     &-item{
+        color:$color-primary-light ;
         padding: 0 1.5rem;
         a{text-decoration: none; transition: all .3s;}
         i{font-size: 2rem; transition: all .3s;}
