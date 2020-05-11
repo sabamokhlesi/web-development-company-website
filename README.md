@@ -1,3 +1,3 @@
-# E-Shop
-an e-commerce webpage
-Check out my website here! https://sabamokhlesi.github.io/E-Shop/
+# web-development-company
+A landing page for a fictional web development company
+Check out my website here! 
