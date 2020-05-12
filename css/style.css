@@ -12,13 +12,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 69em) {
+  @media only screen and (max-width: 62.5em) {
     html {
       font-size: 55%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 52%; } }
-  @media only screen and (max-width: 47em) {
+  @media only screen and (max-width: 50em) {
     html {
       font-size: 50%; } }
 
@@ -96,7 +93,7 @@ body {
   letter-spacing: 1px;
   color: #f197a9;
   margin-bottom: 2rem; }
-  @media only screen and (max-width: 47em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-3 {
       font-size: 1.8rem; } }
 
@@ -134,46 +131,43 @@ p {
     padding: 1rem 0;
     background-image: linear-gradient(to bottom, #1c0033 10%, rgba(28, 0, 51, 0.6) 60%, transparent 100%); }
     .header-top button {
-      margin-right: 14rem; }
+      margin-right: 10rem;
+      margin-left: 1rem; }
   .header-logo {
-    width: 110px;
+    width: 11rem;
     padding: 1rem 2rem; }
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 0 0 55%;
-    z-index: 10; }
-    .header-nav button {
-      margin-top: 2rem; }
-      @media only screen and (max-width: 37.5em) {
-        .header-nav button {
-          display: none; } }
-    .header-nav a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: 800;
-      letter-spacing: 1px;
-      transition: all .2s; }
-      @media only screen and (max-width: 37.5em) {
-        .header-nav a {
-          display: none; } }
-      .header-nav a:hover {
-        border-bottom: 2px  solid currentColor;
-        color: #140024; }
+    @media only screen and (max-width: 37.5em) {
+      .header-logo {
+        width: 9rem;
+        padding: 2rem 0 2rem 2rem; } }
   .header-main {
-    padding-top: 15rem;
+    padding-top: 5rem;
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center; }
     .header-main img {
-      padding-top: 5rem;
-      width: 55%; }
+      padding-top: 8rem;
+      width: 50%; }
+      @media only screen and (max-width: 62.5em) {
+        .header-main img {
+          width: 65%; } }
+      @media only screen and (max-width: 50em) {
+        .header-main img {
+          width: 85%; } }
+      @media only screen and (max-width: 37.5em) {
+        .header-main img {
+          width: 95%; } }
   .header-text {
     justify-self: center;
     width: 45%; }
+    @media only screen and (max-width: 62.5em) {
+      .header-text {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header-text {
+        width: 85%; } }
 
 .navigation-checkbox {
   display: none; }
@@ -184,7 +178,7 @@ p {
   width: 7rem;
   position: fixed;
   top: 3rem;
-  right: 5rem;
+  right: 2rem;
   border-radius: 50%;
   z-index: 2000;
   cursor: pointer; }
@@ -312,10 +306,22 @@ p {
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); }
+  @media only screen and (max-width: 62.5em) {
+    .story {
+      padding: 15rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .story {
+      padding: 17rem 3rem; } }
   .story-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .story-box {
+        justify-content: space-between; } }
+    @media only screen and (max-width: 37.5em) {
+      .story-box {
+        flex-direction: column; } }
     .story-box h3 {
       font-size: 2.7rem;
       background-color: #170128;
@@ -326,8 +332,24 @@ p {
   .story-text {
     width: 30%;
     padding: 4rem 5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .story-text {
+        width: 40%; } }
+    @media only screen and (max-width: 37.5em) {
+      .story-text {
+        width: 80%;
+        text-align: center; } }
   .story img {
     width: 30%; }
+    @media only screen and (max-width: 62.5em) {
+      .story img {
+        width: 40%; } }
+    @media only screen and (max-width: 50em) {
+      .story img {
+        width: 45%; } }
+    @media only screen and (max-width: 37.5em) {
+      .story img {
+        width: 70%; } }
 
 .service {
   grid-column: 3/11;
@@ -335,10 +357,19 @@ p {
   border-radius: 30px;
   margin: 8rem 0;
   padding: 4rem; }
+  @media only screen and (max-width: 62.5em) {
+    .service {
+      grid-column: 2/12; } }
+  @media only screen and (max-width: 37.5em) {
+    .service {
+      margin-bottom: 3rem; } }
   .service-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .service-body {
+        grid-template-columns: 1fr; } }
   .service-box {
     padding: 3rem;
     background-color: #1c0033; }
@@ -352,10 +383,17 @@ p {
   background-attachment: fixed;
   padding: 7rem 1.5rem;
   grid-column: 1/-1; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery {
+      padding: 3rem 1rem; } }
   .gallery-main {
     display: grid;
     grid-template: repeat(7, 5vw)/repeat(8, 1fr);
     gap: 2.5rem; }
+    @media only screen and (max-width: 50em) {
+      .gallery-main {
+        gap: 1rem;
+        grid-template: repeat(7, 8vw)/repeat(8, 1fr); } }
   .gallery-shape {
     width: 100%;
     height: 100%;
@@ -392,9 +430,15 @@ p {
     .gallery-shape:hover .gallery-caption {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1.1); }
+      @media only screen and (max-width: 37.5em) {
+        .gallery-shape:hover .gallery-caption {
+          display: none; } }
     .gallery-shape:hover .gallery-img {
       filter: brightness(0.3) blur(2px);
       transform: scale(1.08); }
+      @media only screen and (max-width: 37.5em) {
+        .gallery-shape:hover .gallery-img {
+          filter: brightness(1) blur(0); } }
   .gallery-caption {
     width: 100%;
     position: absolute;
@@ -407,6 +451,9 @@ p {
     font-size: 150%;
     text-align: center;
     transition: all .5s; }
+    @media only screen and (max-width: 62.5em) {
+      .gallery-caption h5 {
+        display: none; } }
   .gallery-btn {
     text-decoration: none;
     padding: .5rem;
@@ -417,6 +464,9 @@ p {
     border-bottom: 2px solid #f85274; }
     .gallery-btn span {
       display: none; }
+    @media only screen and (max-width: 62.5em) {
+      .gallery-btn {
+        font-size: 1.4rem; } }
     .gallery-btn:hover {
       background-color: #f85274;
       color: #f0e3e5; }
@@ -431,7 +481,7 @@ p {
     transition: all .5s; }
 
 .footer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   grid-column: 2/12;
   grid-row: 7/8;
   display: flex;
@@ -440,11 +490,15 @@ p {
   font-weight: 600;
   border-top: 2px solid #2f0055;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .footer {
+      flex-direction: column-reverse; } }
   .footer-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 1rem 0; }
   .footer-item {
     color: #56009c;
     padding: 0 1.5rem;
@@ -459,27 +513,57 @@ p {
       color: #f197a9;
       transform: scale(1.2) translateY(-0.4rem); }
   .footer-copyright {
-    color: #56009c; }
+    color: #56009c;
+    padding: 1rem 0; }
     .footer-copyright span {
       color: #f197a9;
       font-weight: 700; }
+    @media only screen and (max-width: 62.5em) {
+      .footer-copyright {
+        text-align: center; } }
 
 .clients {
   grid-column: 3/11;
   grid-row: 4/5;
   padding: 5rem 0 17rem 0; }
+  @media only screen and (max-width: 62.5em) {
+    .clients {
+      grid-column: 2/12; } }
   .clients-box {
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .clients-box {
+        flex-direction: column;
+        padding-top: 0; } }
   .clients-text {
     width: 40%; }
     .clients-text h3 {
       font-size: 2.7rem; }
+    @media only screen and (max-width: 62.5em) {
+      .clients-text {
+        width: 45%; } }
+    @media only screen and (max-width: 50em) {
+      .clients-text {
+        width: 100%;
+        padding-bottom: 20rem;
+        text-align: center; } }
   .clients-composition {
     position: relative;
     width: 45%; }
+    @media only screen and (max-width: 50em) {
+      .clients-composition {
+        width: 70%;
+        padding-bottom: 20rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .clients-composition {
+        width: 85%; } }
+    @media only screen and (max-width: 28em) {
+      .clients-composition {
+        width: 90%;
+        padding-bottom: 9rem; } }
     .clients-composition-photo {
       width: 66%;
       border-radius: 3px;
@@ -492,13 +576,25 @@ p {
         left: -1;
         top: -11rem;
         z-index: 11; }
+        @media only screen and (max-width: 50em) {
+          .clients-composition-photo--1 {
+            left: -8; } }
       .clients-composition-photo--2 {
         right: -7rem;
         top: -15rem; }
+        @media only screen and (max-width: 50em) {
+          .clients-composition-photo--2 {
+            right: -2.5rem; } }
       .clients-composition-photo--3 {
         left: 20%;
         top: 0;
         z-index: 12; }
+        @media only screen and (max-width: 50em) {
+          .clients-composition-photo--3 {
+            top: 3rem; } }
+        @media only screen and (max-width: 28em) {
+          .clients-composition-photo--3 {
+            top: -2rem; } }
       .clients-composition-photo:hover {
         outline: 1rem solid #f85274;
         transform: scale(1.05) translateY(-0.5rem);
@@ -511,6 +607,12 @@ p {
   grid-column: 3/11;
   grid-row: 6/7;
   padding: 15rem 0; }
+  @media only screen and (max-width: 62.5em) {
+    .cta {
+      grid-column: 2/12; } }
+  @media only screen and (max-width: 37.5em) {
+    .cta {
+      padding: 8rem 0; } }
   .cta-box {
     background-color: #20003a;
     display: flex;
@@ -519,7 +621,20 @@ p {
     justify-content: space-between;
     align-items: center;
     border-radius: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .cta-box {
+        padding-right: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .cta-box {
+        flex-direction: column-reverse; } }
     .cta-box img {
       width: 55%; }
+      @media only screen and (max-width: 37.5em) {
+        .cta-box img {
+          width: 70%;
+          padding-top: 5rem; } }
   .cta-text {
     justify-self: center; }
+    @media only screen and (max-width: 37.5em) {
+      .cta-text {
+        padding-top: 5rem; } }

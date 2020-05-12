@@ -1,5 +1,5 @@
 .footer{
-    padding: 4rem 0;
+    padding: 2rem 0;
     grid-column: 2/12;
     grid-row: 7/8;
     display: flex;
@@ -8,11 +8,13 @@
     font-weight: 600;
     border-top: 2px solid $color-primary-medium;
     font-size: 1.5rem;
+    @media only screen and (max-width:$bp-largest) {flex-direction: column-reverse;}
     &-list{
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 0;
     }
     &-item{
         color:$color-primary-light ;
@@ -27,6 +29,8 @@
     }
     &-copyright{
         color:$color-primary-light ;
+        padding: 1rem 0;
         span{color:$color-secondary-light; font-weight: 700;}
+        @media only screen and (max-width:$bp-largest) {text-align: center;}
     }
 }

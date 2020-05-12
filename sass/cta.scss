@@ -2,6 +2,8 @@
     grid-column: 3/11;
     grid-row: 6/7;
     padding: 15rem 0;
+    @media only screen and (max-width:$bp-largest) {grid-column: 2/12;}
+    @media only screen and (max-width:$bp-medium) {padding:8rem 0;}
     &-box{
         background-color: #20003a;
         display: flex;
@@ -10,7 +12,9 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 2rem;
-        img{ width: 55%;}
+        @media only screen and (max-width:$bp-large) {padding-right: 3rem;}
+        @media only screen and (max-width:$bp-medium) {flex-direction: column-reverse;}
+        img{ width: 55%; @media only screen and (max-width:$bp-medium) {width: 70%; padding-top: 5rem;}}
     }
-    &-text{justify-self: center;}
+    &-text{justify-self: center; @media only screen and (max-width:$bp-medium) {padding-top: 5rem;}}
 }

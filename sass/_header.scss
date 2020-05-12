@@ -22,47 +22,34 @@
         align-items: center;
         padding: 1rem 0;
         background-image: linear-gradient(to bottom,$color-primary 10%,rgba($color-primary,.6) 60%, transparent 100%);
-        button{margin-right: 14rem;}
+        button{margin-right: 10rem; margin-left: 1rem;}
     }
     &-logo{
-        width: 110px;
+        width: 11rem;
         padding: 1rem 2rem;
+        @media only screen and (max-width:$bp-medium) {width: 9rem;padding:2rem 0 2rem 2rem;}
     }
-    &-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex: 0 0 55%;
-        z-index: 10;
-        button{margin-top:2rem ; @media only screen and (max-width:$bp-small) {display: none;}}
-        a{
-            text-decoration: none;
-            color: inherit;
-            font-weight: 800;
-            letter-spacing: 1px;
-            transition: all .2s;
-            @media only screen and (max-width:$bp-small) {display: none;}
-            &:hover{
-                border-bottom: 2px  solid currentColor;
-                color: $color-primary-dark;
-            }
-        }
-    }
+    
     &-main{
-        padding-top: 15rem;
+        padding-top: 5rem;
         flex: 1;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-direction: column;
         align-items: center;
         img{
-            padding-top: 5rem;
-            width: 55%;
+            padding-top: 8rem;
+            width: 50%;
+            @media only screen and (max-width:$bp-largest) {width: 65%;}
+            @media only screen and (max-width:$bp-large) {width: 85%;}
+            @media only screen and (max-width:$bp-medium) {width: 95%;}
         }
     }
     &-text{
         justify-self: center;
         width: 45%;
+        @media only screen and (max-width:$bp-largest) {width: 70%;}
+        @media only screen and (max-width:$bp-medium) {width: 85%;}
         &-box{
 
         }
@@ -70,17 +57,14 @@
 }
 
 .navigation{
-    &-checkbox{
-        display: none;
-    }
-
+    &-checkbox{display: none;}
     &-btn{
         background-color: $color-primary;
         height: 7rem;
         width: 7rem;
         position: fixed;
         top: 3rem;
-        right: 5rem;
+        right: 2rem;
         border-radius: 50%;
         z-index: 2000;
         cursor: pointer;

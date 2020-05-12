@@ -19,10 +19,10 @@ $color-grey-dark-2: #514d53;
 $color-grey-dark-3: #5e5961;
 
 //mediaqueries breakpoints
-$bp-largest: 69em;
-$bp-large: 56.25em;  
-$bp-medium: 47em; 
-$bp-small: 37.5em; 
+$bp-largest: 62.5em;
+$bp-large: 50em;  
+$bp-medium: 37.5em; 
+$bp-small: 28em; 
 $bp-smaller: 30em; 
 
 // FONT VARIABLES
@@ -49,8 +49,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     @media only screen and (max-width:$bp-largest) {font-size: 55%;}
-    @media only screen and (max-width:$bp-large) {font-size: 52%;}
-    @media only screen and (max-width:$bp-medium) {font-size: 50%;}
+    @media only screen and (max-width:$bp-large) {font-size: 50%;}
     
 }
 

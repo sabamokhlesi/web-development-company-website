@@ -2,19 +2,26 @@
     grid-column: 3/11;
     grid-row: 4/5;
     padding: 5rem 0 17rem 0;
+    @media only screen and (max-width:$bp-largest) {grid-column: 2/12;}
     &-box{
         padding-top: 5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width:$bp-large) {flex-direction: column;padding-top: 0;}
     }
     &-text{
         width: 40%;
         h3{font-size: 2.7rem;}
+        @media only screen and (max-width:$bp-largest) {width: 45%;}
+        @media only screen and (max-width:$bp-large) {width:100%; padding-bottom: 20rem; text-align: center;}
     }
     &-composition{
         position: relative;
         width: 45%;
+        @media only screen and (max-width:$bp-large) {width: 70%; padding-bottom: 20rem;}
+        @media only screen and (max-width:$bp-medium) {width: 85%;}
+        @media only screen and (max-width:$bp-small) {width: 90%; padding-bottom: 9rem;}
         &-photo{
             width: 66%;
             border-radius: 3px;
@@ -28,16 +35,19 @@
                 left: -1;
                 top: -11rem;
                 z-index: 11;
+                @media only screen and (max-width:$bp-large) {left: -8;}
             }
             &--2{
                 right: -7rem;
                 top: -15rem;
-
+                @media only screen and (max-width:$bp-large) {right: -2.5rem;}
             }
             &--3{
                 left: 20%;
                 top: 0;
                 z-index: 12;
+                @media only screen and (max-width:$bp-large) {top: 3rem;}
+                @media only screen and (max-width:$bp-small) {top: -2rem;}
             }
             &:hover{
                 outline: 1rem solid $color-secondary-dark;
