@@ -6,8 +6,7 @@
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-    @media only screen and (max-width:$bp-largest) {padding: 15rem 3rem;}
-    @media only screen and (max-width:$bp-medium) {padding:17rem 3rem;}
+    @media only screen and (max-width:$bp-largest) {padding: 14rem 3rem;}
     &-box{
         display: flex;
         justify-content: space-evenly;

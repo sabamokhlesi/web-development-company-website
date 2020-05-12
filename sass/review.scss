@@ -37,12 +37,12 @@
         &:hover .gallery-caption{
             opacity: 1;
             transform: translate(-50% , -50%) scale(1.1);
-            @media only screen and (max-width:$bp-medium) {display: none;}
+            // @media only screen and (max-width:$bp-medium) {display: none;}
         }
         &:hover .gallery-img{
             filter: brightness(0.3) blur(2px);
             transform: scale(1.08);
-            @media only screen and (max-width:$bp-medium) {filter: brightness(1) blur(0);}
+            // @media only screen and (max-width:$bp-medium) {filter: brightness(1) blur(0);}
         }
     }
     &-caption{
