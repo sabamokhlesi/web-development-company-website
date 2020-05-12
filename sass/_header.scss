@@ -37,6 +37,9 @@
         justify-content: flex-end;
         flex-direction: column;
         align-items: center;
+        h1{animation: moveInRight 1s ease-in;}
+        h4{animation: moveInLeft 1s ease-in;}
+        button{animation: moveInTop 1s ease-in;}
         img{
             padding-top: 8rem;
             width: 50%;
@@ -184,25 +187,38 @@
     }
     80%{
         opacity: 1;
-        transform: translateX(-4px);
+        transform: translateX(-5px);
     }
     100%{
         opacity: 1;
         transform: translate(0);
     }
 }
-
-@keyframes moveOutRight {
+@keyframes moveInLeft {
     0%{
-        opacity: 1;
-        transform: translateX(0);
+        opacity: 0;
+        transform: translateX(-10rem);
     }
-    20%{
+    80%{
         opacity: 1;
-        transform: translateX(-4px);
+        transform: translateX(5px);
     }
     100%{
-        opacity: 0;
-        transform: translateX(10);
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInTop {
+    0%{
+        opacity: 1;
+        transform: translateY(10rem);
+    }
+    80%{
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
     }
 }
