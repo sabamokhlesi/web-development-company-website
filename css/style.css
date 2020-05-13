@@ -285,7 +285,7 @@ p {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(5rem); }
   80% {
     opacity: 1;
     transform: translateX(-5px); }
@@ -296,7 +296,7 @@ p {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-5rem); }
   80% {
     opacity: 1;
     transform: translateX(5px); }
@@ -307,7 +307,7 @@ p {
 @keyframes moveInTop {
   0% {
     opacity: 1;
-    transform: translateY(10rem); }
+    transform: translateY(3rem); }
   80% {
     opacity: 1;
     transform: translateY(-5px); }
